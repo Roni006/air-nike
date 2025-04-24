@@ -1,0 +1,118 @@
+/*
+AUTHOR NAME   : ANIK ISLAM
+TEMPLATE NAEM : AIR NIKE SHOE
+VERSION       : 1.0.0
+*/
+
+/* ESSENTION SET UP  */
+/* ROOT VARIABLES  */
+/* font-family: */
+:root {
+    --primary-font:"Roboto", sans-serif;
+    --secondary-font: "Inter", sans-serif; 
+    --text-color: #6b6b6b;
+    --dark-bg: #232323;
+    --white-color: #f8f8f8;
+    --redish-color: #EC092C;
+}
+
+body {
+    font-family: var(--primary-font);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.container {
+    max-width: 1350px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none; 
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/*HEADER SECTION START */
+.header-section{
+
+}
+.header-leff .logo a{
+
+}
+.header-row{
+    display: flex;
+    align-items: center;
+    gap: 170px;
+    justify-content: space-between;
+}
+.navmenus li{
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding: 0 15px;
+}
+.navmenus li a{
+    display: inline-block;
+    color: var(--black-color);
+    font-weight: 600;  
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    color: var(--text-color);
+}
+.header-iocns{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.circle-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: var(--dark-bg);
+    color: var(--white-color);
+    font-size: 20px;
+    cursor: pointer; 
+    position: relative;
+    padding: 0;
+    border: none;
+}
+.cart-btn .cart-quantity{
+    width: 21px;
+    height: 21px;
+    color: var(--white-color);
+    background-color: var(--redish-color);
+    border-radius: 50%;
+    position: absolute;
+    padding: 3px;
+    top: 0;
+    right: -8px;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+    gap: 130px;
+}
+.canvas-btn{
+    width: 73px;
+    height: 73px;
+    background-color: var(--redish-color);
+    border: none;
+}
+/*HEADER SECTION END */
+
+/* SECTION START */
+/* SECTION END */
+
