@@ -44,7 +44,7 @@ ul{
 
 }
 .header-leff .logo a{
-
+    color: var(--text-color);
 }
 .header-row{
     display: flex;
