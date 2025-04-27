@@ -57,7 +57,7 @@ ul{
     list-style: none;
     margin: 0;
     padding: 0;
-    padding: 0 15px;
+    padding: 0 36px;
 }
 .navmenus li a{
     display: inline-block;
@@ -110,6 +110,33 @@ ul{
     height: 73px;
     background-color: var(--redish-color);
     border: none;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    justify-content: center; 
+    cursor: pointer;
+   
+}
+.canvas-btn span{
+    width: 32px;
+    height: 4px;
+    background-color: var(--white-color);
+    display: inline-block;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.canvas-btn span:nth-child(2){
+    width: 22px;
+}
+.canvas-btn span:nth-child(3){
+    width: 15px;
+}
+.canvas-btn:hover span:nth-child(2),
+.canvas-btn:hover span:nth-child(3){
+    width: 32px;
+    /* transition: all ease-in-out 0.3s; */
 }
 /*HEADER SECTION END */
 
