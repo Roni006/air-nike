@@ -1,0 +1,39 @@
+@media(max-width: 1220px) {
+    .header-row {
+        gap: 30px !important;
+    }
+
+    .header-right {
+        gap: 30px !important;
+    }
+    .header-section .container{
+        padding-right: 0;
+    }
+}
+
+@media(max-width: 975px) {
+    .navmenus li {
+        padding: 0 15px !important;
+    }
+}
+
+@media(max-width: 850px) {
+    .navmenus {
+        display: none !important;
+    }
+
+    .mobile-menu-btn {
+        display: inline-flex;
+    }
+
+    .header-canvas-btn {
+        display: none;
+    }
+
+}
+
+@media(max-width: 500px) {
+    .circle-btn {
+      display: none;
+    }
+}
