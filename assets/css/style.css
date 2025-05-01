@@ -9,13 +9,14 @@ VERSION       : 1.0.0
 /* font-family: */
 :root {
     --primary-font: "Roboto", sans-serif;
-    --heading-font:  "Poppins", sans-serif;
+    --heading-font: "Poppins", sans-serif;
     --secondary-font: "Inter", sans-serif;
     --text-color: #6b6b6b;
     --dark-bg: #232323;
     --white-color: #f8f8f8;
     --redish-color: #EC092C;
     --heading-color: #050025;
+    --dark-canvas-bg: #00051D;
 }
 
 body {
@@ -71,6 +72,10 @@ h6 {
 
 
 /*HEADER SECTION START */
+.header-section {
+    position: relative;
+    z-index: 2;
+}
 
 .header-leff .logo a {
     color: var(--text-color);
@@ -187,17 +192,56 @@ h6 {
 
 /*HERO SECTION START */
 .hero-section {
-    padding: 220px 0;
+    padding: 320px 0 220px;
+    position: relative;
+    z-index: 1;
+    margin-top: -100px;
+}
+
+.hero-content {
+    position: relative;
+}
+
+.stroke-text {
+    font-size: 280px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    position: absolute;
+    right: -350px;
+    top: 0;
+    transform: rotate(-90deg);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color:   rgba(255, 255, 255, 0.157);
+    -webkit-text-stroke-width: 2px;
+
+}
+
+.hero-section::after {
+    content: "";
+    width: 35%;
+    height: 100%;
+    background-color: var(--dark-canvas-bg);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.hero-row {
+    position: relative;
+}
+
+.hero-row .hero-bg {
+    position: absolute;
+    left: 38%;
 }
 
 .hero-content .hero-subtitle {
-    margin-left: 155px;
+    padding-left: 155px;
+    font-family: var(--heading-font);
     line-height: 64px;
-    letter-spacing: -0.02em; 
-    font-family: var(--heading-font); 
-}
-.hero-content  { 
-    position: relative; 
+    letter-spacing: -0.02em;
+    position: relative;
 }
 
 .hero-content .hero-subtitle::before {
@@ -205,14 +249,54 @@ h6 {
     height: 5px;
     width: 135px;
     background-color: var(--redish-color);
-    position: absolute;  
-    bottom: 260px;
-    left: 0; 
-}    
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+}
+
 .hero-content .hero-para {
     font-size: 24px;
     max-width: 655px;
 }
+
+
+.hero-btn a {
+    margin-top: 50px;
+    margin-right: 8px;
+}
+
+.btn-primary,
+.btn-transparent {
+    background-color: var(--redish-color);
+    padding: 18px 28px;
+    color: var(--white-color);
+    display: inline-block;
+    border-radius: 50px;
+    transition: 0.2s;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+}
+
+.btn-primary i {
+    margin-left: 8px;
+    transform: rotate(-30deg);
+}
+
+.btn-primary:hover,
+.btn-transparent:hover {
+    background-color: var(--heading-color);
+    color: var(--white-color);
+}
+
+.btn-transparent {
+    background-color: transparent;
+    color: var(--text-color);
+}
+
+.btn-transparent i {
+    margin-left: 8px;
+}
+
 /*HERO SECTION END */
 
 /* SECTION START */
