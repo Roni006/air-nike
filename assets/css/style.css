@@ -66,7 +66,9 @@ h6 {
     font-family: var(--heading-font) !important;
     font-weight: 700;
 }
-
+img{
+    max-width: 100%;
+}
 
 
 
@@ -196,6 +198,7 @@ h6 {
     position: relative;
     z-index: 1;
     margin-top: -100px;
+    overflow: hidden;
 }
 
 .hero-content {
