@@ -4,9 +4,21 @@
     }
 }
 
+@media(max-width: 2400px) {
+    .about-section::before {
+        width: 35% !important;
+    }
+}
+
 @media(max-width: 2100px) {
     .hero-section::after {
         width: 35% !important;
+    }
+}
+
+@media(max-width: 2000px) {
+    .about-section::before {
+        width: 32% !important;
     }
 }
 
@@ -28,11 +40,36 @@
         right: -185px !important;
         font-size: 220px !important;
     }
+
+    .about-content-wrapper {
+        gap: 40px !important;
+    }
 }
+
+
 
 @media(max-width: 1400px) {
     .hero-section::after {
         width: 27% !important;
+    }
+
+    .about-content h2 {
+        font-size: 80px !important;
+        line-height: 80px !important;
+        margin-top: 35px !important;
+    }
+
+    .about-content .about-subtitle {
+        font-size: 70px !important;
+        line-height: 60px !important;
+    }
+
+    .about-content .about-subtitle::before {
+        bottom: 15px !important;
+    }
+
+    .about-strok-text {
+        font-size: 170px !important;
     }
 }
 
@@ -54,6 +91,38 @@
 
     .trending-product-slider-control {
         padding-left: 15% !important;
+    }
+
+    .about-content-wrapper {
+        display: block !important;
+    }
+
+    .about-section::before {
+        display: none !important;
+    }
+
+    .about-left {
+        width: 100% !important;
+    }
+
+    .about-content {
+        width: 100% !important;
+        margin-top: 80px;
+    }
+
+    .circle-shape {
+        top: 59% !important;
+        left: 16% !important;
+    }
+
+    .about-section .container-lg {
+        max-width: 800px !important;
+    }
+
+    .about-strok-text {
+        left: 50% !important;
+        top: 37% !important;
+        transform: translateX(-50%) !important;
     }
 }
 
@@ -145,7 +214,7 @@
         line-height: 40px !important;
     }
 
-    .section-left  {
+    .section-left {
         flex-shrink: initial !important;
     }
 
@@ -153,6 +222,32 @@
         width: 60px !important;
         height: 60px !important;
         font-size: 30px !important;
+    }
+
+    .circle-shape {
+        width: 360px !important;
+        height: 360px !important;
+        top: 60% !important;
+        left: 5% !important;
+    }
+
+    .about-strok-text {
+        font-size:  110px !important;
+    }
+
+    .about-content .about-subtitle {
+        font-size: 40px !important;
+        line-height: 60px !important;
+        padding-left: 70px !important;
+    }
+
+    .about-content .about-subtitle::before {
+        width: 60px !important;
+    }
+    .about-content p{
+        width: 100% !important; 
+        text-align: justify !important;
+
     }
 }
 
